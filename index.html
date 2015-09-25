@@ -16,7 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/landing-page.css" rel="stylesheet">
-
+	   <link href="css/searchcss.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	
@@ -28,139 +28,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-<style>
-    body {
-        background: #555 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAB9JREFUeNpi/P//PwM6YGLAAuCCmpqacC2MRGsHCDAA+fIHfeQbO8kAAAAASUVORK5CYII=);
-        font: 13px 'Lucida sans', Arial, Helvetica;
-        color: #eee;
-        text-align: center;
-    }
-    
-    a {
-        color: #ccc;
-    }
-    
-    /*-------------------------------------*/
-    
-    .cf:before, .cf:after{
-      content:"";
-      display:table;
-    }
-    
-    .cf:after{
-      clear:both;
-    }
 
-    .cf{
-      zoom:1;
-    }
-
-    /*-------------------------------------*/	
-    
-    .form-wrapper {
-        width: 450px;
-        padding: 15px;
-        margin: 150px auto 50px auto;
-        background: #444;
-        background: rgba(0,0,0,.2);
-        -moz-border-radius: 10px;
-        -webkit-border-radius: 10px;
-        border-radius: 10px;
-        -moz-box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
-        -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
-        box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
-    }
-    
-    .form-wrapper input {
-        width: 330px;
-        height: 20px;
-        padding: 10px 5px;
-        float: left;    
-        font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
-        border: 0;
-        background: #eee;
-        -moz-border-radius: 3px 0 0 3px;
-        -webkit-border-radius: 3px 0 0 3px;
-        border-radius: 3px 0 0 3px;      
-    }
-    
-    .form-wrapper input:focus {
-        outline: 0;
-        background: #fff;
-        -moz-box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
-        -webkit-box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
-        box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
-    }
-    
-    .form-wrapper input::-webkit-input-placeholder {
-       color: #999;
-       font-weight: normal;
-       font-style: italic;
-    }
-    
-    .form-wrapper input:-moz-placeholder {
-        color: #999;
-        font-weight: normal;
-        font-style: italic;
-    }
-    
-    .form-wrapper input:-ms-input-placeholder {
-        color: #999;
-        font-weight: normal;
-        font-style: italic;
-    }    
-    
-    .form-wrapper button {
-		overflow: visible;
-        position: relative;
-        float: right;
-        border: 0;
-        padding: 0;
-        cursor: pointer;
-        height: 40px;
-        width: 110px;
-        font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
-        color: #fff;
-        text-transform: uppercase;
-        background: #d83c3c;
-        -moz-border-radius: 0 3px 3px 0;
-        -webkit-border-radius: 0 3px 3px 0;
-        border-radius: 0 3px 3px 0;      
-        text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
-    }   
-      
-    .form-wrapper button:hover{		
-        background: #e54040;
-    }	
-      
-    .form-wrapper button:active,
-    .form-wrapper button:focus{   
-        background: #c42f2f;    
-    }
-    
-    .form-wrapper button:before {
-        content: '';
-        position: absolute;
-        border-width: 8px 8px 8px 0;
-        border-style: solid solid solid none;
-        border-color: transparent #d83c3c transparent;
-        top: 12px;
-        left: -6px;
-    }
-    
-    .form-wrapper button:hover:before{
-        border-right-color: #e54040;
-    }
-    
-    .form-wrapper button:focus:before{
-        border-right-color: #c42f2f;
-    }    
-    
-    .form-wrapper button::-moz-focus-inner {
-        border: 0;
-        padding: 0;
-    }
-    </style>
 </head>
 
 <body>
@@ -203,15 +71,23 @@
         <div class="container">
           <div class="row">
                 <div class="col-lg-12">
-                    <div class="intro-message">
+                    <div class="intro-message"> 
                         <h1>Speak Up!<h1>
 						<h3>Express yourself through words..</h3>
-						
-						<form class="form-wrapper cf">
-	<input type="text" placeholder="Search here..." required>
-	<button type="submit">Search</button>
-</form>
-				 <hr class="intro-divider">
+			<h2>Stylish Search Box</h2>
+          
+		  <div id="custom-search-input">
+		   
+                            <div class="input-group col-md-5">
+                                <input type="text" class="  search-query form-control" placeholder="Search" />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-danger" type="button">
+                                        <span class=" glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+				 <hr class="intro-divider"> 
                         <ul class="list-inline intro-social-buttons">
                             <li>
                                 <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
@@ -223,7 +99,7 @@
                                 <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
                             </li>
                         </ul>
-                    </div>
+                    <</div> 
                 </div>
             </div>
 
