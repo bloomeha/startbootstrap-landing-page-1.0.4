@@ -14,8 +14,8 @@
         /* IE7-8 doesn't have border-radius, so don't indent the padding */
  
         margin-bottom: 1px;
-        -webkit-border-radius: 1px;
-        -moz-border-radius: 1px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 5px;
         border-radius: 5px;
     }
  
